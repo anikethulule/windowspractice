@@ -1,0 +1,9 @@
+--- 
+- name: win_unzip module demo
+  hosts: win
+  become: false
+  tasks:
+    - name: extractfiles
+      win_unzip:
+              src: "C:/Users/Administrator/Desktop/report.zip"
+              dest: "C:/Users/Administrator/Desktop/aniket/"

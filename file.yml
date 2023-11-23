@@ -1,0 +1,11 @@
+---
+- name: create win_file
+  hosts: win
+  become: false
+  vars: 
+    myfile: 'C:\Users\Administrator\Desktop\anket.txt'
+  tasks: 
+     - name: creating an empty file
+       win_file:
+               path: "{{myfile}}"
+               state: touch

@@ -1,0 +1,11 @@
+[win]
+13.229.55.218
+
+
+[win:vars]
+ansible_password=oPffmZwIZsmxn-4Btk!%t=r?Z-O)n7Ix
+ansible_connection=winrm
+ansible_port=5986
+ansible_user= Administrator
+ansible_winrm_server_cert_validation=ignore
+ansible_winrm_transport=basic
